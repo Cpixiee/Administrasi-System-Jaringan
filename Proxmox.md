@@ -18,4 +18,22 @@
 
    2.Ping Dari IPCOP ke MainOS dan Proxmox Serta Sebaliknya
 
-   
+**Setelah Install Proxmox Kalian Perlu MengRouting Agar MainOS dan Guest Bisa saling terhubung**
+
+*caranya*
+
+```echo 1 > /proc/sys/net/ipv4/ip_forward```
+
+```iptables -t nat -A POSTROUTING -j MASQUERADE```
+
+
+   * Jika Sudah Kita Tinggal Install IPCOPnya*
+![](https://github.com/Cpixiee/Upload/blob/main/ss1.png)
+
+Kalian Pilih OS yang telah Kalian Upload Seperti Gambar Di Atas Dan Juga Kernel Digant Ke 2.4 
+
+![](https://github.com/Cpixiee/Upload/blob/main/ss2.png)
+
+setelah itu SCCI Contorllernya di ganti ke Default
+
+      
