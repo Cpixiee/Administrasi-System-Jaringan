@@ -36,4 +36,13 @@ Kalian Pilih OS yang telah Kalian Upload Seperti Gambar Di Atas Dan Juga Kernel 
 
 setelah itu SCCI Contorllernya di ganti ke Default
 
+![](https://github.com/Cpixiee/Upload/blob/main/ss3.png)
+
+Network Nya ikuti Saja Sesuai Gambar
+
+**jika sudah Di upload kalian start consolenya disini saya akan mengberitahu step yang penting saja**
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop1.png)
+
+Pilih Hardisk
       
