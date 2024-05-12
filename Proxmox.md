@@ -27,6 +27,7 @@
 ``` iptables -t nat -A POSTROUTING -j MASQUERADE ```
 
    * Jika Sudah Kita Tinggal Install IPCOPnya*
+
 ![](https://github.com/Cpixiee/Upload/blob/main/ss1.png)
 
 Kalian Pilih OS yang telah Kalian Upload Seperti Gambar Di Atas Dan Juga Kernel Digant Ke 2.4 
