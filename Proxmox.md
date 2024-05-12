@@ -22,10 +22,9 @@
 
 *caranya*
 
-```echo 1 > /proc/sys/net/ipv4/ip_forward```
+``` echo 1 > /proc/sys/net/ipv4/ip_forward ```
 
-```iptables -t nat -A POSTROUTING -j MASQUERADE```
-
+``` iptables -t nat -A POSTROUTING -j MASQUERADE ```
 
    * Jika Sudah Kita Tinggal Install IPCOPnya*
 ![](https://github.com/Cpixiee/Upload/blob/main/ss1.png)
@@ -45,4 +44,90 @@ Network Nya ikuti Saja Sesuai Gambar
 ![](https://github.com/Cpixiee/Upload/blob/main/ipcop1.png)
 
 Pilih Hardisk
-      
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop2.png)
+
+Disini Kalian Skip Saja 
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop3.png)
+
+Disini Kalian Tidak Perlu Mengceklis atau Memberi Tanda * Cukup Kita **ok** Saja
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop4.png)
+
+Pilih *Select**
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop5.png)
+
+Pilih "GREEN" dan Lalu assign
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop6.png)
+
+Jika Di Table Sudah Muncul **GREEN** Setelah itu Pencet **DONE**
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop6.png)
+
+ Arahkan ke "Ok" enter
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop7.png)
+
+Masukan Ip Kalian Sesuaikan Netwok Id IP kalian dengan AP Yang kalian Pakai
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop8.png)
+
+Disini Kalian Tidak Perlu Mengatur DHCPnya Kalian Biarkan Saja Lalu Tekan **SKIP**
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop9.png)
+
+*Disini Instalasi Sudah Selesai Sekarang Kita Tinggal Mengatur SSH Di IPCOPnya, Sebelum itu Kalian login terlebih Dahulu Jika Sudah kalian Kedalam Tampilan GUI IPCOP dengan cara: https://(ipkalian):8443 setelah itu kalian masukan dengan* 
+
+Login: **Admin**
+
+password: **yang kalian buat**
+
+Contohnya Seperti Di gambar Di bawah ini 
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop10.png)
+
+Kalian Pilih System Lalu Cari Bagian SSH Server Kalian Allow Semua / Kalian Ceklis Seperti Gambar Di Bawah ini
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop11.png)
+
+Setelah Itu Kalian Login SSH dengan menggunakan Termial Windows/MX linux/Ubuntu dll.
+
+![](https://github.com/Cpixiee/Upload/blob/main/ipcop12.png)
+
+Jika Sudah Login Coba Kalian Ping Ke MainOS dan Ke Proxmox Sever Apakah Bisa 
+
+
+**TroubleShoot**
+Disini Saya akan memberikan Sedikit Cara mengatasi TroubleShoot Di Server Proxmox
+
+**1.kenapa Dari IPCOP ping / Paket Yang Kita Kirim Tidak Masuk**
+
+2.Kenapa Saat SSH ada tulisan *WARNING* 
+
+Oke Kita Bahas Yang Pertama Dulu
+
+Kemungkinan kenpa Kalian Tidak Bisa mengping ke MainOS dari IPCOP itu karna ROUTING Kalian Belum berhasil kalian dapat mengeceknya dengan menggunakan comment
+
+``` iptables -t nat -nvL```
+
+contoh nya seperti ini
+
+![](https://github.com/Cpixiee/Upload/blob/main/ss%20ssh%20nvl.png)
+
+jika kalian lihat disitu tidak ada sama sekali ROUTING, Jadi kalian Perlu Meng ROUTING ulang 
+
+jika ada maka tampilannya seperti ini
+
+![](https://github.com/Cpixiee/Upload/blob/main/ada.png)
+
+Jika Belum bisa Juga Berati Kalian perlu mematikan **FIREWALLnya**, Kenapa Firewall?? 
+
+Disini Saya akan memberikan Penjelasan Terhadap defense yang dilakukan oleh firewall 
+
+**disini Jika firewall kalian aktif maka dia akan mengira ping/paket yang kalian kirim adalah paket yang berbahaya jadi otomatis paket yang kalian kirim akan di tahan dan di hapus oleh firewall**
+
+cara mengatasi cukup mudah kalian hanya perlu ke pengaturan windows lalu cari firewall and security lalu matikan semuanya
+
