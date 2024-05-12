@@ -129,5 +129,45 @@ Disini Saya akan memberikan Penjelasan Terhadap defense yang dilakukan oleh fire
 
 **disini Jika firewall kalian aktif maka dia akan mengira ping/paket yang kalian kirim adalah paket yang berbahaya jadi otomatis paket yang kalian kirim akan di tahan dan di hapus oleh firewall**
 
-cara mengatasi cukup mudah kalian hanya perlu ke pengaturan windows lalu cari firewall and security lalu matikan semuanya
+cara mengatasi cukup mudah kalian hanya perlu ke pengaturan windows lalu cari firewall network Protections lalu matikan semuanya
 
+Matikan Seperi gambar Di bawah ini
+
+![](https://github.com/Cpixiee/Upload/blob/main/firewall.png)
+
+jika kalian ping maka paket yang kalian kirim akan masuk, contohnya seperti gambar di bawah ini
+
+![](https://github.com/Cpixiee/Upload/blob/main/firewall%20not%20active.png)
+
+jika firewall di aktifkan maka akan terjadi seperti ini, jadian gambar di bawah ini dan di atas sebagai perbandingan 
+
+![](https://github.com/Cpixiee/Upload/blob/main/firewall%20aktive.png)
+
+*Selanjutnya kita masuk ke trouble shooting yang kedua ini terjadi tidak hanya di proxmox saja*
+
+pertama kalian pergi ke file exploler kalian, ikuti saja langkah - langkah di bawah ini
+
+buka tampilan this pc dan pilih disk kalian
+
+![](https://github.com/Cpixiee/Upload/blob/main/thispc1.png)
+
+jika sudah pilih user 
+
+![](https://github.com/Cpixiee/Upload/blob/main/thispc2.png)
+
+pilih user yang kalian punya disini user saya salwi
+
+![](https://github.com/Cpixiee/Upload/blob/main/thispc3.png)
+
+jika sudah pilih .ssh dan masuk ke dalam foldernya
+
+![](https://github.com/Cpixiee/Upload/blob/main/thispc4.png)
+
+jika sudah hapus file yang unknown host
+
+![](https://github.com/Cpixiee/Upload/blob/main/thispc5.png)
+
+jika sudah kalian coba login lagi menggunakan ssh 
+
+
+*SEKIAN TERIMAKASIH*
