@@ -110,4 +110,20 @@ Jika sudah urusan di Server Sudah Kelar, Tinggal kita Atur saja Clientnya
 
 Bisa juga Menggunakan : <kbd>Ctrl</kbd> + <kbd>N</kbd>
 
-*3.J
+*3.Jika Sudah Tambkan Seperti Gambar Di bawah ini*, [Pakai Template ](https://github.com/Cpixiee/Upload/blob/main/codeclient.txt)
+
+**Name untuk VPN nya bebas**
+
+![](https://github.com/Cpixiee/Upload/blob/main/code%20.png)
+
+Jika Sudah **SAVE**
+
+*4.jika sudah Active kan VPN nya Seperti gambar di bawah*
+
+![](https://github.com/Cpixiee/Upload/blob/main/active.png)
+
+**Jika Sudah Maka Akan Berwarna Hijau Dan ada Perisainya**
+
+**######OKEY SUDAH SELESAI KONFIGURASINYA WAKTUNYA MELAKUKAN PENGETESAN DAN PENGECEKAN***######
+
+
