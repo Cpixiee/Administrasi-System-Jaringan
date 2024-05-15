@@ -5,4 +5,4 @@ ListenPort = (51820)
 
 [Peer]
 PublicKey = (PublicKey Client) 
-AllowedIPs = (ip yang akan diberikan ke client)
+AllowedIps = (ip yang akan diberikan ke client)
