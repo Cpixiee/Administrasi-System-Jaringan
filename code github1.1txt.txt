@@ -1,0 +1,9 @@
+[Interface]
+PrivateKey = //PrivateKeyServer
+Address = IP VPN  //(Example = 10.10.10.1/24)
+ListenPort = UDP Ports  //(Example = 51820)
+
+[Peer]
+PublicKey = //PublicKeyClientWindows
+AllowedIps = //AddressWireguardClientWindows
+
