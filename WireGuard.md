@@ -51,6 +51,6 @@ File wg0 adalah Konfigurasi WireGuard Untuk Wireguard Server
 
 ```nano /etc/wireguard/wg0.conf```
 
-**Di bawah Ini Templatenya**
+*Ini Templatenya :*[Templatenya](https://github.com/Cpixiee/Administrasi-System-Jaringan/blob/main/code%20github1.1txt.txt)
 
 
