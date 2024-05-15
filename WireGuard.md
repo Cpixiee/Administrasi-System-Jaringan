@@ -57,4 +57,38 @@ Publickey di Client
 
 *Ini Templatenya :*[Templatenya](https://github.com/Cpixiee/Administrasi-System-Jaringan/blob/main/code%20github1.1txt.txt)
 
+Ubah Seperti Di bawah ini Address Menyesuaikan Soal 
+
+Port Juga Bisa di ganti lalu add dengan menggunakan UFW (optional)
+
+![](https://github.com/Cpixiee/Upload/blob/main/wgo.png)
+
+*9.Jika sudah kalian edit sysctl.conf bisa juga manual*
+
+```nano /etc/sysctl.conf```
+
+Ganti Seperti Di Gambar di Bawah ini
+
+![](https://github.com/Cpixiee/Upload/blob/main/systcl.png)
+
+jika sudah jalankan comment ini
+
+```sysctl -p```
+
+*10.jika sudah kita start dan aktifkan wireguardnya, jalankan comment di bawah ini*
+
+```systemctl start wg-quick@wg0.conf.service```
+
+```systemctl enable wg-quick@wg0.conf.service```
+
+*11.lalu kita set peer untuk clientnya*
+
+ wg set wg0 peer (PublicKey client windows) allowed-ips (ip yang akan diberikan ke windows)
+
+contoh
+```wg set wg0 peer jskjksdjkajjjsasadaderer== allowed-ips 10.10.10.2```
+
+*12.jika sudah kita atur ROUTING nya, Salin template yang ada di bawah ini
+
+**Template :** [Iptables Template](https://github.com/Cpixiee/Upload/blob/main/code%20iptables.txt)
 
