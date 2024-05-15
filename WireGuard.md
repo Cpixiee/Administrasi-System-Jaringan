@@ -126,4 +126,20 @@ Jika Sudah **SAVE**
 
 **######OKEY SUDAH SELESAI KONFIGURASINYA WAKTUNYA MELAKUKAN PENGETESAN DAN PENGECEKAN***######
 
+*5.lalu Kita Akan Melakukan Pengecekan Adapater Di CMD Apakah Ada adapter dari VPN kita*
 
+![](https://github.com/Cpixiee/Upload/blob/main/unknown%20client.png)
+
+*Jika Berhasil Maka Akan* **Ada Unknown Adapter Client** 
+
+*6.Lalu Kita Akan Melakukan Pengujian, Kita Akan PING ip WireGuard Server*
+
+![](https://github.com/Cpixiee/Upload/blob/main/ping%20server.png)
+
+*Jika Berhasil Maka Akan Reply*
+
+*7.Lalu Kita Akan Melakukan Pengujian Masuk Ke SSH ip WireGuard Server*
+
+![](https://github.com/Cpixiee/Upload/blob/main/login%20ssh.png)
+
+*jika Berhasil Akan Masuk Ke Dalam Serverya*
