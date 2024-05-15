@@ -8,7 +8,7 @@ yang dibutuhkan
 
   Download Wireguard Client : [Wireguard](https://download.wireguard.com/windows-client/wireguard-installer.exe)
 
-Masuk Ke dalam Konfigurasi 
+**#####Konfigurasi WireGuard Server#####**
 
 *1.Buatlah Virtual Machine*
 
@@ -88,7 +88,26 @@ jika sudah jalankan comment ini
 contoh
 ```wg set wg0 peer jskjksdjkajjjsasadaderer== allowed-ips 10.10.10.2```
 
-*12.jika sudah kita atur ROUTING nya, Salin template yang ada di bawah ini
+*12.jika sudah kita atur ROUTING nya, Salin template yang ada di bawah ini*
 
 **Template :** [Iptables Template](https://github.com/Cpixiee/Upload/blob/main/code%20iptables.txt)
 
+Atur Network VPN (sesuai IP yang kalian inginkan)
+
+Jika sudah jalankan comment di bawah ini
+
+```systemctl restart wg-quick@wg0.service```
+
+Jika sudah urusan di Server Sudah Kelar, Tinggal kita Atur saja Clientnya
+
+**#####Konfigurasi WireGuard Client#####**
+
+*1.Kalian Masuk Ke Aplikasi WireGuardnya*
+
+*2.jika sudah tambahkan tunnel, caranya seperti di gambar di bawah ini*
+
+![](https://github.com/Cpixiee/Upload/blob/main/Wireguard%20Client.png)
+
+Bisa juga Menggunakan : <kbd>Ctrl</kbd> + <kbd>N</kbd>
+
+*3.J
