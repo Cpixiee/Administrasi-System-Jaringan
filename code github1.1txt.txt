@@ -1,9 +1,8 @@
 [Interface]
-PrivateKey = //PrivateKeyServer
-Address = IP VPN  //(Example = 10.10.10.1/24)
-ListenPort = UDP Ports  //(Example = 51820)
+PrivateKey = (Masukan Private Key Di server)
+Address = (ip yang akan digunakan untuk VPN)
+ListenPort = (51820)
 
 [Peer]
-PublicKey = //PublicKeyClientWindows
-AllowedIps = //AddressWireguardClientWindows
-
+PublicKey = (PublicKey Client) 
+AllowedIps = (ip yang akan diberikan ke client)
