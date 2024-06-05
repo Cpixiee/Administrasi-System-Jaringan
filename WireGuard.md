@@ -28,7 +28,7 @@ Pastikan Kalian Sudah Connect Ke Bridge Dan Mendapatkan Internet
 
 *5.Buatlah PublicKey Dan Private Untuk WireGuard Server*
 
-```wg genkey | tee privatekey | wg pubkey | tee publickey```
+```umask 077;wg genkey | tee privatekey | wg pubkey | tee publickey```
 
 **NOTE**:Cara Agar Wireguard Server Dan WireGuard Client Bisa Terhubung, Kalian Harus Menukar PublicKey Server Dan PublicKey Client*
 
